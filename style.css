@@ -1,0 +1,181 @@
+*{
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+html,body{
+  background-image: url(./Fondo.png);
+  background-size: contain;
+}
+
+
+
+h1{
+  position: absolute;
+  width: 100%;
+  top: 8%;
+
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size:46px;
+
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.327);
+
+}
+
+main{
+  width: 100%;
+  z-index: 99;
+  position: relative;
+  text-align: center;
+  user-select: none;
+}
+
+main img{
+  width: 100%;
+  height: auto;
+}
+
+::placeholder {
+  color: rgb(206, 202, 202);
+  opacity: 1;
+}
+
+
+.contenedor-texto{
+  position: absolute;
+  width: 100%;
+  top: 0.86%;
+  height: 100%;
+}
+
+textarea{
+  background: transparent;
+  resize:none;
+  font-size:20px;
+  color:#f4f5e8;
+}
+
+#texto-encriptar{
+  position: absolute;
+  width: 26.24%;
+  top: 28%;
+  left: 5.7%;
+  height: 28.5%;
+
+  border: 0 none;
+  outline: none;
+
+}
+
+#texto-desencriptar{
+  position: absolute;
+  width: 26.24%;
+  top: 28%;
+  right: 5.7%;
+  height: 28.5%;
+
+  border: 0 none;
+  outline: none;
+}
+
+button{
+  margin: auto -7px;
+  border-radius:5px;
+  cursor: pointer;
+  overflow:hidden;
+  font-size: 10px;
+  box-shadow: 0px 0px 5px 0px;
+  background-color:  #3098d1;
+
+  font-size: clamp(0.8vw, 0rem, 2vw);
+  font-weight: 600;
+}
+
+#boton-encriptar{
+  position: absolute;
+  width: 5.50%;
+  height: 2.5%;
+  top: 64.7%;
+  left: 44.5%;
+}
+
+#boton-desencriptar{
+  position: absolute;
+  width: 5.50%;
+  height: 2.5%;
+  top: 64.7%;
+  right: 44.5%;
+}
+
+
+/* MODAL */
+
+#modal{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+  top: 37.1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 15px;
+  text-align: center;
+  user-select: none;
+
+  animation: zoomIn .3s ease;
+}
+
+@keyframes zoomIn {
+  from {
+      transform: scale(0);
+  }
+  to {
+      transform: scale(1) translate(-50%, -50%);
+  }
+}
+
+
+#modal h2{
+  background-color:#329fb396;
+  border-bottom: 2px solid black;
+  width: 100%;
+  text-align: center;
+}
+
+
+#modal p{
+  padding:0px 10px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+#modal button{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  background-color:#329fb396;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top:3px;
+  padding:5px;
+
+}
+
+#modal::backdrop {
+  background-color: rgba(0,0,0,.55);
+
+}
+
+.ocultar-placeholder::placeholder {
+  color: transparent;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+    <main>
+        <h1>Encriptador de texto</h1>
+        <img  src="./Render.png"/>
+            
+        <section>
+            <div class="contenedor-texto">
+                <textarea id="texto-encriptar" placeholder="Ingrese el texto a encriptar"></textarea>
+                <textarea id="texto-desencriptar" placeholder="Ingrese el texto a desencriptar"></textarea>
+            </div>           
+        </section>
+
+            <button id="boton-encriptar" onclick="encriptador()">Encriptar</button>
+            <button id="boton-desencriptar" onclick="desencriptador()">Desencriptar</button>
+
+    </main>
+
+    <dialog id="modal">
+        <h2>ATENCIÓN</h2>
+        <p>Únicamente emplear letras minúsculas.</p>
+        <p>Evitar el uso de acentos y caracteres especiales.</p></p>
+        <button id="btn-cerrar-modal">Aceptar</button>
+    </dialog>
+
+<script src="script.js"></script>
+
+</body>
+</html>
